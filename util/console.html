@@ -32,7 +32,7 @@
                 };
 
                 var resource = aliasMap[command] || command;
-                var url = 'https://d36ejl8o6w4tb4.cloudfront.net/v1.0/' + resource;
+                var url = 'https://m1q02ukdoi.execute-api.us-west-2.amazonaws.com/prod/' + resource;
                 var params = resource==='url-parse' ? { url: theRest } : { text: theRest };
 
                 term.pause();
