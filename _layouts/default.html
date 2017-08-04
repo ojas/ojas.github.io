@@ -1,6 +1,43 @@
 <!doctype html>
 
 <html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>{% if page.title %}{{ page.title }} - {% endif %}{{ site.name }}</title>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="ojas patel -  technologist, motoring enthusiast, hobbyist living in Austin, TX, USA">
+  <link href="https://fonts.googleapis.com/css?family=Lora|Open+Sans" rel="stylesheet">
+
+  <style>
+      body {
+        margin: 1cm auto 0 auto;
+        width: 13cm;
+        line-height: 140%;
+        font-size: 18px;
+        font-family: 'Lora', serif;
+        color: #222;
+      }
+      h1, h2, h3, h4, h5, h6 {
+        font-family: 'OpenSans', sans-serif;
+      }
+      ul.judd {
+        margin: 0;
+        padding: 0;
+        list-style-type: none;
+        display: inline-block;
+      }
+      ul.judd li {
+        display: inline;
+      }
+      ul.judd li:not(:first-child):before {
+        content: " ▪ ";
+      }
+  </style>
+</head>
+<body>
+{{ content }}
+</body>
 <!--
 ╱╱╱╱╱╱╱╭╮╱╱╱╱╱╱╱╱╱╱
 ╱╱╱╱╭━━╋╋━━┳━━╮╱╱╱╱
@@ -10,44 +47,4 @@
 ╱╱╱╱╱╱╭╯┃╱╱╱╱╱╱╱╱╱╱
 ╱╱╱╱╱╱╰━╯╱╱╱╱╱╱╱╱╱╱
 -->
-<head>
-  <meta charset="utf-8">
-  <title>{% if page.title %}{{ page.title }} - {% endif %}{{ site.name }}</title>
-  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="ojas patel -  technologist, motoring enthusiast, hobbyist living in Austin, TX, USA">
-<link href="https://fonts.googleapis.com/css?family=Lora|Open+Sans" rel="stylesheet">
-
-  <style>
-      body { margin: 1cm auto 0 auto; width: 13cm; line-height: 140%; font-size: 18px; }
-      body {
-        font-family: 'Lora', serif;
-        color: #222;
-      }
-      h1, h2, h3, h4, h5, h6 {
-        font-family: 'OpenSans', sans-serif;
-      }
-      ul.judd {
-        list-style-type: square;
-        list-style-position: inside;
-        margin: 0;
-        padding: 0;
-        display: inline-block;
-      }
-      ul.judd li {
-        float:left;
-        margin-left: 10px;
-      }
-      ul.judd li:first-child {
-        list-style-type: none;
-        margin-left: 0;
-      }
-  </style>
-</head>
-<body>
-{{ content }}
-</body>
 </html>
-
-
-
