@@ -1,2 +1,5 @@
 name: ojas
 layout: default
+
+plugins:
+  - jekyll-sitemap
