@@ -1,0 +1,336 @@
+/* standard */
+
+	h1, h2, h3 {
+		width:712px;
+		clear:both;
+		background-color:#ccc;
+		padding:4px 0 4px 3px;
+		margin:0 0 2px 0;
+	}
+	h1 {
+		font-size:12pt;
+		border-bottom:1px solid #bbb;
+		border-left:5px solid #cc0000;
+	}
+	h2 {
+		font-size:9pt;
+		padding:3px 0 3px 3px;
+		background-color:#ddd;
+		border-bottom:1px solid #ccc;
+		border-left:5px solid #aa0000;
+	}
+	h3 {
+		font-size:8pt;
+		padding:2px 0 2px 3px;
+		background-color:#eee;
+		border-bottom:1px solid #ddd;
+		border-left:5px solid #880000;
+	}
+	body {
+		background-color:#ffffff;
+	}
+	
+	body, table {
+		font-family:verdana;
+		font-size: 8pt;
+	}
+	
+	p {
+		width:720px;
+	}
+
+	a:link {
+		color:#0000aa;
+		text-decoration:none;
+		xtext-decoration:underline;
+	}
+	
+	a:visited {
+		color:#8888aa;
+		text-decoration:none;
+	}
+	
+	a:hover, a:active {
+		color:#0000aa;
+		text-decoration:underline;
+	}
+
+/* tweak standard items */
+
+	/* mark external links differently */
+	a[href^="http:"]:after {
+		color:#999999;
+		font-size:6pt;
+		line-height:9pt;
+		vertical-align:bottom;
+		padding-left:1px;
+		content: ">";
+	}
+
+	/* mark email links differently */
+	a[href^="mailto:"] {
+		padding: 1px 0px 2px 16px;
+		background: url(http://cdn.ojas.net/nsx/NSteXpo2005/Media/Icons/icon_email.gif) no-repeat 0 0;
+	}
+	
+	a[href="http://ojas.net/"] {
+		background-image:url(/ojas-icon.gif);
+		background-repeat:no-repeat;
+		padding: 4px 0px 4px 18px;
+	}
+
+a img {
+	border:1px solid #ccc;
+}
+img {
+	disxplay:none;
+}
+
+.dynTop {
+	background-color:#333;
+	padding:6px;
+	color:#fff;
+}
+
+
+.page {
+	width:800px;
+	background-color:#ffffff;
+	text-align:left;
+	margin-bottom:30px;
+	padding:10px;
+	page-break-after: always;
+	clear:both;
+}
+
+
+
+div.tbl {
+	width:720px;
+}
+
+
+/* video and download links */
+a.video {
+	padding: 3px 0px 2px 17px;
+	background: url(http://cdn.ojas.net/nsx/NSteXpo2005/Media/Icons/page_video.gif) no-repeat 0 0;
+}
+a.download {
+	padding: 3px 0px 2px 17px;
+	background: url(http://cdn.ojas.net/nsx/NSteXpo2005/Media/Icons/icon_download.gif) no-repeat 0 0;
+}
+a.ownerBoy {
+	padding: 3px 0px 2px 17px;
+	background: url(http://cdn.ojas.net/nsx/NSteXpo2005/Media/Icons/page_boy.gif) no-repeat 0 0;
+}
+a.chart {
+	padding: 3px 0px 2px 17px;
+	background: url(http://cdn.ojas.net/nsx/NSteXpo2005/Media/Icons/chart_curve.png) no-repeat 0 0;
+}
+ul.nil {
+	padding-left:15px;
+	xmargin-left:;
+	xlist-style: none;
+}
+ul.nil li {
+	xheight:18px;
+}
+
+/*
+	background-color:#ddd;
+	border-bottom:1px solid #ccc;
+	border-left:5px solid #aa0000;
+*/
+
+/* sspec tables */
+table.spec {
+	border-collapse:collapse;
+	border:1px solid #eee;
+	border-width: 0 1px 0 1px;
+	margin-bottom:6px;
+	width:720px;
+}
+table.spec thead {
+	background-color:#eee;/* same as h3 since the table.spec follows h2 */
+}
+table.spec td {
+	border:1px solid #eee;
+	border-width: 0px 0 1px 0;
+}
+table.spec caption {
+	text-align: left;
+	background-color:#eee;
+	padding: 2px;
+}
+
+/* dyno tables */
+table.dyno {
+	margin: 10px 0px 10px 21px;
+	border-collapse:collapse;
+	border:1px solid #ccc;
+	border-width: 0 1px 0 1px;
+	width:399px;
+}
+table.dyno td {
+	border:1px solid #ccc;
+	border-width: 1px 0 1px 0;
+	text-align:center;
+}
+table.dyno thead tr {
+	background-color:#eee;
+}
+table.dyno td.heading {
+	background-color:#f4f4f4;
+	font-size:7pt;
+}
+
+tr.bestRun {
+	color:#000;
+	font-weight:bold;
+	background-color:#ffffee;
+}
+	
+
+/*
+	ref: http://www.princexml.com/doc/selectors/
+*/
+
+/* Dyno Viewer */
+div.dviewer {
+	width:720px;
+	height:400px;
+	position:relative;
+}
+div.dviewer img {
+	position:absolute;
+	top:0px; left:0px;
+	width:720px;
+	height:400px;
+}
+
+/* IE PNG stuff */
+img {
+	behavior: url(pngbehavior.htc); /* for IE */
+}
+
+/*
+.runSelector {
+	border-width: 5px 0 0 0;
+	border-style: solid;
+	padding-top:2px;
+	xbackground-color:#fff;
+}
+.runSelector optgroup {
+	font-family:lucida console, Courier New, Courier;
+	font-style:normal;
+	font-weight:normal;
+	font-size:8pt;
+	padding-left:0px;
+	xbackground-color:#eee;
+	border-bottom:1px solid green;
+}
+.runSelector optgroup option {
+	font-family:lucida console, Courier New, Courier;
+	padding-left:0px;
+	color:#888;
+	font-size:8pt;
+	xbackground-color:#fff;
+}
+.runSelector optgroup option.mmax {
+	background-color:yellow;
+	color:#000;
+}
+*/
+
+
+table.runSel {
+	font-family:verdana, arial, sans;
+	font-size:7pt;font-weight:bold;
+	border-collapse:collapse;
+	border:1px solid #555;
+	border-width: 0 2px 2px 2px;
+	color:#888;
+	margin:0 0 6px 3px;
+}
+table.runSel td {
+	vertical-align:top;
+	border:1px solid #777;
+	text-align:right;	
+	border-width: 0px 0 1px 0;
+	padding:1px 5px 0px 5px;
+}
+table.runSel td.vehName, table.runSel thead td {
+	text-align:left;
+	background-color:#777;
+	color:white;
+}
+table.runSel td.vehNameSub {
+	text-align:left;
+	background-color:#777;
+	font-weight:normal;
+	font-size:6pt;
+	padding:0 1px 0px 1px;
+	color:white;
+	border-color:#555;
+	border-width: 1px 0 0 1px;
+}
+
+table.runSel tr {
+border-top:2px solid #555;
+}
+
+table.runSel tr.selectableRow {
+	cursor:pointer;
+	border-top:0;
+}
+
+img.tn {
+	width:118px;
+	height:70px;
+}
+img.individualDyno {
+	width:432px;
+	height:240px;
+}
+
+
+.flush {
+	margin:0;
+}
+
+div.footer {
+	width:720px;
+	clear:both;
+	border-top:2px solid #ccc;
+	padding-top:3px;
+	margin-bottom:3px;
+}
+div.footer a.validator {
+	float:right;
+}
+div.footer div.contact {
+	float:left;
+}
+
+
+/* grid */
+
+table.grid tr th
+{
+	border: 1px solid #333;
+	background-color: #333;
+	text-align:left;
+	color:#ccc;
+	padding-left:2px;
+}
+
+table.grid
+{
+	border-collapse: collapse;
+	border:0;
+	width:100%;
+}
+table.grid tr td
+{
+	border: 1px solid #333;
+}

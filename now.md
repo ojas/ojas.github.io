@@ -10,6 +10,8 @@ In a few weeks, I'm taking a roadtrip which marks some sort of new beginning.
 
 I've enjoyed the last few weeks at TheSV
 
+
+
 - Launching my new company, [Auto Dojo](https://auto-dojo.com/). We got our first legit customer last month.
 - Growing my existing software company, [Sage IQ](http://sage-iq.com/). Current engagements:
 	- Running software development for a local tech startup

@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html xml:lang="en" lang="en" xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+		<meta name="author" content="ojas" />
+		<title>NSteXpo 2005 Dyno Report: Dyno Run Viewer</title>
+		<link rel="stylesheet" href="main.css" />
+		<link rel="shortcut icon" href="/ojas-icon.gif" />		
+		<script type="text/javascript" src="DynoRunViewer.js"></script>
+	</head>
+	<body>
+		<h1 class="flush">NSteXpo 2005 Dyno Session</h1>
+		<h2 class="flush">Interactive Dyno Run Viewer</h2>
+		<p>
+			Each dyno run from the <a href="DynoReport.html">NSteXpo 2005 Dyno Session</a> is shown in the table to the right.
+			The emphasized rows indicate the strongest runs for each vehicle.
+			Click a run to view its graph.  Click it again to remove it.  Upto three runs may be viewed at a time.
+		</p>
+		<p>
+			Horizontal axis is engine RPM. Vertical axis is power (in SAE horsepower) and torque (in foot-pounds).
+		</p>
+		<div class="dviewer" style="float:left;left:0">
+			<img src="http://cdn.ojas.net/nsx/NSteXpo2005/Media/Graphs/Background.png" alt="Dyno graph grid and background" />
+			<img id="slot0" src="http://cdn.ojas.net/nsx/NSteXpo2005/Media/Loading.gif" style="display:none" alt="Dyno run 1 plot" />
+			<img id="slot1" src="http://cdn.ojas.net/nsx/NSteXpo2005/Media/Loading.gif" style="display:none" alt="Dyno run 2 plot" />
+			<img id="slot2" src="http://cdn.ojas.net/nsx/NSteXpo2005/Media/Loading.gif" style="display:none" alt="Dyno run 3 plot" />
+			<img src="http://cdn.ojas.net/nsx/NSteXpo2005/Media/blank.gif" alt="" />
+		</div>
+		<table class="runSel" style="float:left;left:720px"
+			>
+			<thead>
+				<tr>
+					<td colspan="2">owner</td>
+					<td>run</td>
+					<td>power</td>
+					<td>torque</td>
+					<td>time</td>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td class="vehName" colspan="2" rowspan="4">NSXLuvr</td>
+				</tr>
+				<tr class="selectableRow" onclick="runClick(this)" id="run01001">
+					<td>1</td><td>254.33</td><td>196.19</td><td>10:32:30</td>
+				</tr>
+				<tr class="selectableRow bestRun" onclick="runClick(this)" id="run01002">
+					<td>2</td><td>259.36</td><td>198.97</td><td>10:33:44</td>
+				</tr>
+				<tr class="selectableRow" onclick="runClick(this)" id="run01003">
+					<td>3</td><td>259.05</td><td>197.52</td><td>10:34:44</td>
+				</tr>
+				<tr>
+					<td class="vehName" colspan="2" rowspan="4">Fastrunner</td>
+				</tr>
+				<tr class="selectableRow" onclick="runClick(this)" id="run02004">
+					<td>1</td><td>254.89</td><td>189.11</td><td>10:57:56</td>
+				</tr>
+				<tr class="selectableRow" onclick="runClick(this)" id="run02005">
+					<td>2</td><td>255.07</td><td>189.80</td><td>11:01:30</td>
+				</tr>
+				<tr class="selectableRow bestRun" onclick="runClick(this)" id="run02006">
+					<td>3</td><td>260.13</td><td>191.94</td><td>11:02:26</td>
+				</tr>
+				<tr>
+					<td class="vehName" colspan="1" rowspan="7">rbirling<sup>1</sup></td>
+					<td class="vehNameSub" colspan="1" rowspan="3"><span title="Runs 1 &amp; 2 were performed with original stock catalytic converters.">stock<br />cats</span></td>
+				</tr>
+				<tr class="selectableRow bestRun" onclick="runClick(this)" id="run03001">
+					<td>1</td><td>254.10</td><td>190.55</td><td>11:19:48</td>
+				</tr>
+				<tr class="selectableRow" onclick="runClick(this)" id="run03002">
+					<td>2</td><td>252.07</td><td>189.49</td><td>11:22:02</td>
+				</tr>
+				<tr>
+					<td class="vehNameSub" colspan="1" rowspan="4"><span title="Runs 3, 4 &amp; 5 were performed with new high-performance aftermarket catalytic converters from Random Technologies.">Random<br />Tech.<br />cats</span></td>
+				</tr>
+				<tr class="selectableRow" onclick="runClick(this)" id="run10004">
+					<td>3</td><td>253.94</td><td>189.45</td><td>14:01:02</td>
+				</tr>
+				<tr class="selectableRow" onclick="runClick(this)" id="run10005">
+					<td>4</td><td>256.72</td><td>193.20</td><td>14:02:02</td>
+				</tr>
+				<tr class="selectableRow bestRun" onclick="runClick(this)" id="run10006">
+					<td>5</td><td>259.29</td><td>194.22</td><td>14:02:50</td>
+				</tr>
+				<tr><td class="vehName" colspan="2" rowspan="4">SamBel</td></tr>
+				<tr class="selectableRow" onclick="runClick(this)" id="run04001">
+					<td>1</td><td>245.21</td><td>190.69</td><td>11:42:38</td>
+				</tr>
+				<tr class="selectableRow bestRun" onclick="runClick(this)" id="run04002">
+					<td>2</td><td>248.48</td><td>191.74</td><td>11:43:54</td>
+				</tr>
+				<tr class="selectableRow" onclick="runClick(this)" id="run04003">
+					<td>3</td><td>247.42</td><td>190.98</td><td>11:45:10</td>
+				</tr>
+				<tr><td class="vehName" colspan="2" rowspan="4">loNfastNSX</td>
+				</tr>
+				<tr class="selectableRow" onclick="runClick(this)" id="run05001">
+					<td>1</td><td>250.28</td><td>185.04</td><td>12:07:14</td>
+				</tr>
+				<tr class="selectableRow" onclick="runClick(this)" id="run05002">
+					<td>2</td><td>253.00</td><td>189.27</td><td>12:08:42</td>
+				</tr>
+				<tr class="selectableRow bestRun" onclick="runClick(this)" id="run05003">
+					<td>3</td><td>255.54</td><td>188.78</td><td>12:09:34</td>
+				</tr>
+				<tr><td class="vehName" colspan="2" rowspan="4">NSX FoYoAss</td></tr>
+				<tr class="selectableRow" onclick="runClick(this)" id="run06001">
+					<td>1</td><td>241.73</td><td>185.79</td><td>12:33:40</td>
+				</tr>
+				<tr class="selectableRow" onclick="runClick(this)" id="run06002">
+					<td>2</td><td>243.81</td><td>186.80</td><td>12:34:32</td>
+				</tr>
+				<tr class="selectableRow bestRun" onclick="runClick(this)" id="run06003">
+					<td>3</td><td>244.16</td><td>186.88</td><td>12:35:20</td>
+				</tr>
+				<tr><td class="vehName" colspan="2" rowspan="4">DPG</td></tr>
+				<tr class="selectableRow" onclick="runClick(this)" id="run07001">
+					<td>1</td><td>260.82</td><td>192.08</td><td>12:58:58</td>
+				</tr>
+				<tr class="selectableRow bestRun" onclick="runClick(this)" id="run07002">
+					<td>2</td><td>260.95</td><td>191.18</td><td>13:00:00</td>
+				</tr>
+				<tr class="selectableRow" onclick="runClick(this)" id="run07003">
+					<td>3</td><td>260.29</td><td>189.63</td><td>13:01:14</td>
+				</tr>
+				<tr><td class="vehName" colspan="2" rowspan="4">mmmvious</td></tr>
+				<tr class="selectableRow" onclick="runClick(this)" id="run08001">
+					<td>1</td><td>259.70</td><td>195.43</td><td>13:19:20</td>
+				</tr>
+				<tr class="selectableRow" onclick="runClick(this)" id="run08002">
+					<td>2</td><td>263.62</td><td>197.14</td><td>13:20:30</td>
+				</tr>
+				<tr class="selectableRow bestRun" onclick="runClick(this)" id="run08003">
+					<td>3</td><td>263.68</td><td>196.66</td><td>13:21:48</td>
+				</tr>
+				<tr><td class="vehName" colspan="2" rowspan="4">Paul</td></tr>
+				<tr class="selectableRow" onclick="runClick(this)" id="run09001">
+					<td>1</td><td>257.06</td><td>188.48</td><td>13:41:22</td>
+				</tr>
+				<tr class="selectableRow" onclick="runClick(this)" id="run09002">
+					<td>2</td><td>260.77</td><td>188.90</td><td>13:42:18</td>
+				</tr>
+				<tr class="selectableRow bestRun" onclick="runClick(this)" id="run09003">
+					<td>3</td><td>264.83</td><td>193.44</td><td>13:43:26</td>
+				</tr>
+				<tr>
+					<td colspan="2" class="vehName"></td>
+					<td colspan="4" onclick="clearAll()" style="cursor:pointer;text-align:center">clear graph</td>
+				</tr>
+			</tbody>
+		</table>
+		<div class="footer">
+			<div class="contact">
+				Created: 2006.02.28 by <a href="http://ojas.net/">ojas</a>
+				<br />
+				Last updated: 2006.02.28
+				<!--
+				2006.06.09 - Grammar correction
+				-->
+			</div>
+			<a class="validator" href="http://validator.w3.org/check?uri=referer">valid XHTML</a>
+		</div>
+	</body>
+</html>

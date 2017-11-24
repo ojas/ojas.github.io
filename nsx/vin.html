@@ -1,0 +1,30 @@
+---
+title: NSX VIN Decoder
+name: NSX VIN Decoder
+layout: report
+---
+
+<script type="text/javascript" src="NSXVIN.class.js"></script>
+<script type="text/javascript" src="NSXVIN.helper.js"></script>
+
+<h1>NSX VIN Decoder</h1>
+
+<p>
+	I wrote this VIN Decoder for the Honda/Acura NSX based on information found in
+	the <a href="http://www.nsxprime.com/FAQ/General/vin.htm">NSX Prime : Decoding an NSX VIN FAQ</a>.
+	<!-- 
+	You will need a W3C DOM-compliant browser (IE5+, Netscape 6+, etc) to use this decoder.
+	-->
+	Enter your 17-digit VIN for an NSX below and click decode.
+	If you have a question/comment or find a bug, please <a href="http://ojas.net/contact.html">let me know</a> or
+	<a href="http://nsxprime.com/forums/showthread.php?t=8652">discuss on NSX Prime</a>.
+</p>
+
+<p>
+	<form name="NSXVINCheck" onsubmit="doCheck(this); return false">
+		VIN:
+		<input tabindex="1" type="text" name="VIN" value="JH4NA1152MT001365" maxlength="17" class="textbox" style="width:200px;height:16px" size="20" />
+		<input tabindex="2" type="button" onclick="doCheck(this.form)" value="decode" class="button" />
+	</form>
+</p>
+<div id="VINInfo" style="height:200px"></div>

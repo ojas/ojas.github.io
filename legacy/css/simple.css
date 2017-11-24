@@ -1,0 +1,270 @@
+/* main elements */
+	body {
+		background-color:#111;
+		padding:0px;
+		border:0;
+		margin:0 0 0 6px;
+		color:white;
+		/*font-family: Trebuchet MS, Trebuchet, Tahoma;*/
+		font-family: Helvetica, Verdana, Arial, sans-serif;
+		font-size: 10pt;
+		/*width:800px;*/
+	}
+	h1, h2, h3 {
+		width:726px;
+		clear:both;
+		background-color:#222;
+		left:-6px;
+		position:relative;
+		padding:4px 0 4px 3px;
+		margin:0 0 2px 0;
+	}
+	.flush {
+		margin:0;
+	}
+	h1 {
+		font-size:12pt;
+		border-left:6px solid #333;
+	}
+	h2 {
+		font-size:10pt;
+		padding:3px 0 3px 3px;
+		background-color:#151515;
+		border-left:6px solid #aa0000;
+	}
+	h3 {
+		font-size:8pt;
+		padding:2px 0 2px 3px;
+		background-color:#222;
+		border-left:6px solid #880000;
+	}
+	p, fieldset {
+		width:720px;
+	}
+/* forms */
+	
+	form {
+		margin:0;
+	}
+	
+	fieldset {
+		border:1px solid #555;
+		background-color:#222;
+	}
+	
+	input[type="text"], input[type="select"], input[type="file"], textarea {
+		background-color:#555;
+		color:#f80;
+		border-width:1px;
+		border-style:solid;
+		border-color:#444 #666 #666 #444;
+	}
+	
+	input[type="submit"], input[type="button"], button {
+		color:#840;
+		/*border-width:1px;xbackground-color:green;*/
+	}
+	
+	textarea {
+		font-family: lucida console;
+		font-size: 10pt;
+	}
+
+/* links */
+	a {
+		color:#c00;
+		text-decoration:none;
+	}
+	
+	a:link {
+		text-decoration:underline;
+	}
+	
+	a:visited {
+		color:#a02;
+		text-decoration:underline;
+	}
+	
+	a:hover, a:active {
+		color:#f04;
+		text-decoration:underline;
+	}
+
+	a[href="http://ojas.net/"] {
+		background-image:url(http://ojas.net/ojas-icon.gif);
+		background-repeat:no-repeat;
+		padding: 4px 0px 4px 18px;
+	}
+
+/* tables */
+	table.grid {
+		border-collapse:collapse;
+		border: 1px solid #999;
+	}
+	table.grid td {
+		border-collapse:collapse;
+		border: 1px solid #999;
+	}
+	table.grid thead td {
+		background-color:#666;
+	}
+
+/* IDs */
+	#footer {
+		clear:both;
+		margin-top: 7pt;
+		border-top: 1px solid #333;
+		padding: 3px;
+		font-size: 8pt;
+		width:720px;
+		/*
+		background-color:#111;
+		height:16px;
+		*/
+	}
+	#crumbs {
+		width:726px;
+		padding:1px 0 1px 3px;
+		margin:0 0 2px 0;
+		left:-6px;
+		position:relative;
+		font-size:8pt;
+		background-color:#111;
+		border-left:6px solid #222;
+		/*font-family:verdana;*/
+	}
+	#crumbs a {
+		color:#c33;
+	}
+	
+	#gsearch {
+		width:100px;
+	}
+	#search {
+		width:100px;
+		position:absolute;
+		top:25px;
+		left:628px
+	}
+	
+	cite.photo {
+		color:#888;
+		/*
+		position:relative;
+		float:left;
+		left:4px;
+		top:-24px;
+		*/
+		bottom:10px;left:20px;position:absolute;
+		font-size: 8pt;
+	}
+	cite.photo a {
+		color:#888;
+	}
+	ul.nav {
+		list-style: none;
+	}
+	ul.nav li {
+		background-color:#222;
+		margin:2px;
+		width:200px;
+	}
+	ul.nav li:hover {
+		background-color:#333;
+	}
+
+
+/* OpenID */
+input.openid_login {
+   background: url(http://openid.net/login-bg.gif) no-repeat;
+   background-color: #fff;
+   background-position: 0 50%;
+   color: #000;
+   padding-left: 18px;
+}
+
+/*
+#footer a[href="http://ojas.net/"] {
+	float:left;
+}
+
+#val {
+	float:right;
+}
+*/
+/* Home-page specific */
+		ul.exp {
+			position:absolute;
+			top:50px;
+			left:522px;
+			list-style: none;
+			xbackground-color:#300;
+			margin:0;
+		}
+		/*
+		ul.exp li {
+			position:absolute;
+			width:200px;
+			left:0;
+		}
+		ul.exp li a {
+			font-weight:bold;
+			letter-spacing:0.2em;
+			display:block;
+			border:1px solid #222;
+			background-color:#222;
+			width:100%;
+			height:100%;
+			text-align:center;
+			font-size:16px;
+		}
+		ul.exp li a:hover {
+			border:1px solid #f04;
+		}
+		#exp1 {
+			left:   0px;    top:  0px;
+			width:200px; height: 30px;
+		}
+		#exp2 {
+			left:   0px;    top: 35px;
+			width:200px; height: 30px;
+		}
+		#exp3 {
+			left:   0px;    top: 70px;
+			width:200px; height: 24px;
+		}
+		#exp3b {
+			left:   0px;    top: 99px;
+			width:200px; height: 24px;
+		}
+		#exp4 {
+			left:   0px;    top:128px;
+			width: 98px; height: 24px;
+		}
+		#exp5 {
+			left: 102px;    top:128px;
+			width: 98px; height: 24px;
+		}
+		#exp3 a, #exp3b a, #exp4 a, #exp5 a {
+			font-size:12px;
+		}
+		*/
+
+	#news {
+		color:#ccc;
+		position:absolute;
+		padding:4px;
+		top:207px;
+		left:522px;
+		width:196px;
+		background-color:#222;
+	}
+	#news ul {
+		list-style: none;
+		margin:0;
+		padding:0;
+	}
+	#news ul li {
+		padding:3px 0 3px 0;
+		border-top:2px solid #000;
+	}

@@ -1,0 +1,68 @@
+---
+title: Wheel Offsets
+name: Wheel Offsets
+layout: nsx
+---
+
+		<script type="text/javascript" src="/common/excanvas.js"></script>
+		<script type="text/javascript" src="/common/jquery-1.2.1.js"></script>
+		<script type="text/javascript" src="/w.js"></script>
+
+		<style type="text/css">
+		.wc {
+			position:relative;height:300px;width:300px
+		}
+		.wtop {
+			position:absolute;
+			top:10px;
+			left:10px;
+			height:8px;
+			width:40px;
+			border-style: solid;
+			border-color: Black;
+			border-width: 0 2px 2px 2px;
+		}
+		.wmid {
+			position:absolute;
+			top:18px;
+			left:10px;
+			height:84px;
+			width:20px;
+			background-color:#333;
+			border-style: solid;
+			border-color: Black;
+			border-width: 0 2px 0 0;
+		}
+		.wbot {
+			position:absolute;
+			top:100px;
+			left:10px;
+			height:8px;
+			width:40px;
+			border-style: solid;
+			border-color: Black;
+			border-width: 2px 2px 0 2px;
+		}
+		</style>
+
+		<div style="width:300px;background-color:#444;margin:10px 0 10px 0;padding:3px">
+		<div style="margin:3px">
+			size:
+			<input type="text" id='txt' onchange="Wh.parse(this.value)" value="17 x 7.5 +40mm" />
+		</div>
+		<div id="cont" style="background-color:#222;width:300px;height:300px"></div>
+		</div>
+		
+
+		<script type="text/javascript">
+		$(document).ready(function() {
+			Wh.init('#cont');
+			var h = location.hash;
+			if (h)
+			{
+				h = h.substring(1);
+				document.getElementById('txt').value = h;
+			}
+			setTimeout("			document.getElementById('txt').onchange();", 500); 
+		});
+		</script>
