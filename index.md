@@ -30,7 +30,7 @@ layout: default
 <h2>Ask me about</h2>
 
 <h3>Motoring</h3>
-<p>I've enjoyed cars my entire life. I currently owner and steward of <a href="/nsx/">Acura NSX Zanardi #04</a> and <a href="https://www.instagram.com/lfa4life/">Lexus LFA #165</a>.</p>
+<p>I've enjoyed cars my entire life. I'm currently the owner and steward of <a href="/nsx/">Acura NSX Zanardi #04</a> and <a href="https://www.instagram.com/lfa4life/">Lexus LFA #165</a>.</p>
 <p>A few fun things…</p>
 <ul>
 	<li><a href="https://jalopnik.com/the-analog-joys-of-driving-a-near-perfect-old-honda-pre-1754872819">The Analog Joys Of Driving A Near-Perfect Old Honda Prelude Si</a>, 2016</li>
