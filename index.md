@@ -11,7 +11,6 @@ layout: default
 	<div style="margin-left:20px">
 		<h1 style="margin: 0 0 1em 0">ojas</h1>
 		<p><a href="mailto:ojas@ojas.net">ojas@ojas.net</a> | <a href="https://www.visualcv.com/ojas">résumé</a></p>
-		<p>It's mid-2018 and I'm <strong>restructuring life</strong> – taking a break from the life I've built in Austin (which has been home since 2000) &amp; spending more time with the fambam</p>
 	</div>
 </div>
 
@@ -27,6 +26,7 @@ layout: default
 </ul>
 -->
 
+<!--
 <h2>Ask me about</h2>
 
 <h3>Motoring</h3>
@@ -53,6 +53,7 @@ layout: default
 	<li><a href="http://boxlabatx.com/">#thefutureofretail</a></li>
 	<li>building a living space out of a shipping container and <a href="https://www.netflix.com/title/80184067">appearing on Netflix</a></li>
 </ul>
+-->
 
 <!--
 Last year, we shot an episode for new Netflix series called “Amazing on the Inside” at our shop (scheduled to be released on Netflix in the next few months). I am seeing other many opportunities coming up – our upcoming Auto Dojo Lexus LFA build is at the top of the list in my head. I wanted to at least bring that to your attention in case a sponsorship in such a build would be something of interest to 56 NORD.
