@@ -1,0 +1,12 @@
+<!doctype html>
+<html>
+    <meta http-equiv="refresh" content="0; url={{ page.redirect_url }}">
+    {% if page.title %}
+    <head>
+        <title>{{ page.title }} - {{ site.name }}</title>
+    </head>
+    {% endif %}
+    <body>
+        {{content}}
+        <hr>
+        Hold on tightly (let go lightly) – redirecting to <a href="{{page.redirect_url}}">{{page.redirect_url}}</a>
