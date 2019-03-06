@@ -20,5 +20,6 @@ layout: default
 - Alamo Drafthouse rules apply for all ride-alongs
 - Coworking hours made available the day-of. no exceptions.
 - Taco ride-along requires audience participation. We gonna be hauling junk.
+- I am open to compromising or negotiate or work-with-you on terms, but never virtues.
 
 Prices last updated 2019-03 and are subject to change.
