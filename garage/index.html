@@ -20,6 +20,24 @@ layout: default
 		}
 		</style>
 <table>
+	{% assign rides = site.data.vehicle-historic | reverse %}
+	{% for ride in rides %}
+	{% assign num = forloop.length | minus: forloop.index0 %}
+	<tr>
+		<td class="num">{{num}}</td>
+		<td><img class="tn" src="{{ride.picture_url}}" width="200" alt="" /></td>
+		<td><strong><a>
+			{{ride.year}} {{ride.make}} {{ride.model}} {{ride.trim}}
+			</a></strong><br>
+			{{ride.color}} {{ride.from}} – {{ride.to}}
+		<br /></td>
+	</tr>
+	{% endfor %}
+</table>
+
+<!--
+<h1>Old table...</h1>
+<table>
 	<tr>
 		<td class="num">22</td>
 		<td><img class="tn" src="https://instagram.fphx1-1.fna.fbcdn.net/vp/288ff3d92d1dca0ce6964a3850ccace0/5BE20B00/t51.2885-15/e35/14716395_210369729387966_5737970500936663040_n.jpg" width="200" alt="" /></td>
@@ -154,7 +172,7 @@ layout: default
 		<a href="http://www.beretta.net/model_info/images/91gtzad.jpg">haha</a><br />
 		That's not my car pictured, but mine looked exactly like it.</td>
 	</tr>
-
+-->
 
 	<tr>
 		<td></td>
